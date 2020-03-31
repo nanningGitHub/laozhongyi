@@ -1,21 +1,85 @@
 * {
     margin: 0px;
     padding: 0px;
-    
 }
-.content{
+
+/* header 开始 */
+.header {
+    background: rgba(255, 255, 255, 1);
+}
+
+.header .center {
+    height: 96px;
+    width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_name {
+    font-size: 24px;
+    font-family: PingFang SC;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 1);
+}
+
+.header_namePinyin {
+    font-size: 14px;
+    font-family: PingFang SC;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 1);
+}
+
+.phone {
+    display: flex;
+    align-items: center;
+}
+
+.phoneImg {
+    height: 48px;
+    width: 48px;
+}
+
+.phoneNmb {
+    margin-left: 10px;
+    font-size: 24px;
+    font-family: PingFang SC;
+    font-weight: bold;
+    color: rgba(51, 51, 51, 1);
+}
+
+/* header 结束 */
+
+.content {
     width: 1200px;
     margin: auto;
 }
-.header {
-    height: 200px;
-    width: 200px;
-}
-.header img{
-    width: 100%;
-    height: 100%;
-}
-.video{
+
+.video {
     width: 200px;
     height: 400px;
 }
+
+/* footer 开始 */
+.footer {
+    background: rgba(21, 78, 175, 1);
+}
+
+.footer .center {
+    margin: auto;
+    width: 1200px;
+    height: 195px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-right {
+    font-size: 18px;
+    font-family: PingFang SC;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 1);
+}
+
+/* footer 结束 */
