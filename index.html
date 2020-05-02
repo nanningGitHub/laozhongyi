@@ -7,6 +7,60 @@
     <title>南皮县龙湖湾小区老中医门诊</title>
     <meta name="description" content="沧州市南皮县龙湖湾小区老中医门诊">
     <link rel="stylesheet" href="./css/public.css">
+    <script>
+        (function (designWidth, maxWidth) {
+            var doc = document,
+                win = window;
+            var docEl = doc.documentElement;
+            var tid;
+            var rootItem, rootStyle;
+
+            function refreshRem() {
+                var width = docEl.getBoundingClientRect().width;
+                if (!maxWidth) {
+                    maxWidth = 750;
+                };
+                if (width > maxWidth) {
+                    width = maxWidth;
+                }
+                var rem = width * 100 / designWidth;
+                rootStyle = "html{font-size:" + rem + 'px !important}';
+                rootItem = document.getElementById('rootsize') || document.createElement("style");
+                if (!document.getElementById('rootsize')) {
+                    document.getElementsByTagName("head")[0].appendChild(rootItem);
+                    rootItem.id = 'rootsize';
+                }
+                if (rootItem.styleSheet) {
+                    rootItem.styleSheet.disabled || (rootItem.styleSheet.cssText = rootStyle)
+                } else {
+                    try {
+                        rootItem.innerHTML = rootStyle
+                    } catch (f) {
+                        rootItem.innerText = rootStyle
+                    }
+                }
+                docEl.style.fontSize = rem + "px";
+            };
+            refreshRem();
+            win.addEventListener("resize", function () {
+                clearTimeout(tid);
+                tid = setTimeout(refreshRem, 300);
+            }, false);
+            win.addEventListener("pageshow", function (e) {
+                if (e.persisted) {
+                    clearTimeout(tid);
+                    tid = setTimeout(refreshRem, 300);
+                }
+            }, false);
+            if (doc.readyState === "complete") {
+                doc.body.style.fontSize = "16px";
+            } else {
+                doc.addEventListener("DOMContentLoaded", function (e) {
+                    doc.body.style.fontSize = "16px";
+                }, false);
+            }
+        })(750, 750);
+    </script>
 </head>
 
 <body>
@@ -22,7 +76,12 @@
             </div>
         </div>
     </div>
+    <div class="web_header">
+        <p class="web_header_name">南皮县龙湖湾小区老中医门诊</p>
+        <p class="web_header_namePingyin">NANPIXIANZHONGYIMENZHEN</p>
+    </div>
     <div class="banner"></div>
+    <div class="web_banner"></div>
     <div class="content">
         <div class="content_left">
             <!-- <div class="portrait">
@@ -35,6 +94,23 @@
         </div>
         <div class="content_right">
             <img src="/img/content.png" alt="" srcset="">
+        </div>
+    </div>
+    <div class="web_content">
+        <h2>老中医治疗儿童尿床一绝</h2>
+        <div class="p1_box">
+            <p>中医认为，小儿遗尿大多是由于肾气不足，下元</p>
+            <p>不固，膀胱失约所致。</p>
+        </div>
+        <div class="line"></div>
+        <div class="p2_box">
+            <p>王氏疗法，祖传三代，独创疗法，医患千万，中</p>
+            <p>西结合，治愈率高，服用方便等特点，是治疗此</p>
+            <p>病的首选。</p>
+        </div>
+        <div class="web_content_phone">
+            <img src="./img/phoneIcon.png" alt="">
+            <span>15284373669</span>
         </div>
     </div>
     <div class="footer">
@@ -54,6 +130,22 @@
                 <p>南皮县龙湖湾小区老中医门诊</p>
                 <p>冀ICP备20005064号-1</p>
             </div>
+        </div>
+    </div>
+    <div class="web_footer">
+        <div class="web_footer_top">
+            <div class="web_footer_codeBox">
+                <img src="./img/erweima.png" alt="">
+            </div>
+            <div class="line"></div>
+            <div class="web_footer_top_right">
+                <p>微 信：15284373669</p>
+                <p class="web_footer_top_right_address">地 址： 南皮县龙湖湾小区</p>
+            </div>
+        </div>
+        <div class="web_footer_bottom">
+            <p>南皮县龙湖湾小区老中医门诊</p>
+            <p>辽ICP备18010799号</p>
         </div>
     </div>
 </body>

@@ -3,215 +3,401 @@
     padding: 0px;
 }
 
-/* header 开始 */
-@media screen and (min-width:1200px) {
-    .header {
-        background: rgba(255, 255, 255, 1);
-    }
-
-    .header .center {
-        height: 96px;
-        width: 1200px;
-        margin: auto;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        color: #222222;
-    }
-
-    .header_name {
-        font-size: 24px;
-        font-family: PingFang SC;
-        font-weight: bold;
-
-    }
-
-    .header_namePinyin {
-        font-size: 14px;
-        font-family: PingFang SC;
-        font-weight: bold;
-    }
-
-    .phone {
-        display: flex;
-        align-items: center;
-    }
-
-    .phoneImg {
-        height: 48px;
-        width: 48px;
-    }
-
-    .phoneNmb {
-        margin-left: 10px;
-        font-size: 24px;
-        font-family: PingFang SC;
-        font-weight: bold;
-        color: rgba(51, 51, 51, 1);
-    }
+/* pc header 开始 */
+.header {
+    background: rgba(255, 255, 255, 1);
 }
 
-@media screen and (max-width:750px) {}
+.header .center {
+    height: 96px;
+    width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #222222;
+}
 
-/* header 结束 */
-
-@media screen and (min-width:1200px) {
-    .banner {
-        width: 100%;
-        height: 600px;
-        background-image: url(../img/banner.png);
-        background-position: center;
-        background-repeat: no-repeat;
-    }
-
-    .content {
-        height: 640px;
-        width: 1200px;
-        margin: auto;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .portrait {
-        height: 100px;
-        width: 100px;
-        overflow: hidden;
-        margin: auto;
-        border: 5px solid rgba(21, 78, 175, 1);
-    }
-
-    .portrait img {
-        height: 100%;
-        width: 100%;
-    }
-
-    .content_title {
-        margin: auto;
-        width: 361px;
-        height: 31px;
-        font-size: 32px;
-        font-family: PingFang SC;
-        font-weight: bold;
-        color: rgba(21, 78, 175, 1);
-        line-height: 48px;
-    }
-
-    .p1 {
-        margin: 30px auto 0px;
-        width: 396px;
-        height: 48px;
-        font-size: 18px;
-        font-family: PingFang SC;
-        font-weight: bold;
-        color: rgba(21, 78, 175, 1);
-        line-height: 30px;
-    }
-
-    .line {
-        margin: 30px auto 30px;
-        width: 480px;
-        height: 4px;
-        background: rgba(21, 78, 175, 1);
-        border-radius: 2px;
-    }
-
-    .p2 {
-        margin: auto;
-        width: 341px;
-        height: 78px;
-        font-size: 18px;
-        font-family: PingFang SC;
-        font-weight: bold;
-        color: rgba(102, 102, 102, 1);
-        line-height: 30px;
-    }
-
-    .content_right {
-        height: 420px;
-        width: 700px;
-    }
-
-    .content_right img {
-        height: 100%;
-        width: 100%;
-    }
-
+.header_name {
+    font-size: 24px;
+    font-family: PingFang SC;
+    font-weight: bold;
 
 }
 
-@media screen and (max-width:750px) {
-    .banner {
-        width: 100%;
-        height: 280px;
-        background-image: url(../img/banner.png);
-        background-size: cover;
+.header_namePinyin {
+    font-size: 14px;
+    font-family: PingFang SC;
+    font-weight: bold;
+}
+
+.phone {
+    display: flex;
+    align-items: center;
+}
+
+.phoneImg {
+    height: 48px;
+    width: 48px;
+}
+
+.phoneNmb {
+    margin-left: 10px;
+    font-size: 24px;
+    font-family: PingFang SC;
+    font-weight: bold;
+    color: rgba(51, 51, 51, 1);
+}
+
+/* pc header 结束 */
+
+
+/* pc web banner 开始 */
+
+.banner {
+    width: 100%;
+    height: 600px;
+    background-image: url(../img/banner.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.web_banner {
+    width: 7.5rem;
+    height: 2.8rem;
+    background-image: url(../img/banner.png);
+    background-size: 100% 100%;
+}
+
+/* pc web banner 结束 */
+
+
+/* pc content 开始 */
+.content {
+    height: 640px;
+    width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.portrait {
+    height: 100px;
+    width: 100px;
+    overflow: hidden;
+    margin: auto;
+    border: 5px solid rgba(21, 78, 175, 1);
+}
+
+.portrait img {
+    height: 100%;
+    width: 100%;
+}
+
+.content_title {
+    margin: auto;
+    width: 361px;
+    height: 31px;
+    font-size: 32px;
+    font-family: PingFang SC;
+    font-weight: bold;
+    color: rgba(21, 78, 175, 1);
+    line-height: 48px;
+}
+
+.p1 {
+    margin: 30px auto 0px;
+    width: 396px;
+    height: 48px;
+    font-size: 18px;
+    font-family: PingFang SC;
+    font-weight: bold;
+    color: rgba(21, 78, 175, 1);
+    line-height: 30px;
+}
+
+.line {
+    margin: 30px auto 30px;
+    width: 480px;
+    height: 4px;
+    background: rgba(21, 78, 175, 1);
+    border-radius: 2px;
+}
+
+.p2 {
+    margin: auto;
+    width: 341px;
+    height: 78px;
+    font-size: 18px;
+    font-family: PingFang SC;
+    font-weight: bold;
+    color: rgba(102, 102, 102, 1);
+    line-height: 30px;
+}
+
+.content_right {
+    height: 420px;
+    width: 700px;
+}
+
+.content_right img {
+    height: 100%;
+    width: 100%;
+}
+
+/* pc content 结束 */
+
+
+/* pc footer 开始 */
+.footer {
+    background: rgba(21, 78, 175, 1);
+}
+
+.footer .center {
+    margin: auto;
+    width: 1200px;
+    height: 195px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgba(255, 255, 255, 1);
+}
+
+.footer-left {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.erweima {
+    width: 100px;
+    height: 100px;
+    background: rgba(34, 34, 34, 1);
+    border: 5px solid rgba(255, 255, 255, 1);
+}
+
+.erweima img {
+    height: 100%;
+    width: 100%;
+}
+
+.footer-left .line {
+    width: 1px;
+    height: 110px;
+    background: rgba(255, 255, 255, 1);
+    opacity: 0.5;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.weixin {
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.footer-right {
+    font-size: 18px;
+    font-family: PingFang SC;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 1);
+}
+
+.footer-right p {
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* pc footer 结束 */
+
+
+/* web header 开始 */
+.web_header {
+    height: 0.88rem;
+    width: 100%;
+    background: rgba(21, 78, 175, 1);
+    box-sizing: border-box;
+    padding-top: 0.14rem;
+}
+
+.web_header_name {
+    text-align: center;
+    font-size: 0.32rem;
+    font-family: PingFang SC;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 1);
+    line-height: 0.32rem;
+}
+
+.web_header_namePingyin {
+    margin-top: 0.12rem;
+    text-align: center;
+    font-size: 0.18rem;
+    font-family: PingFang SC;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 1);
+    line-height: 0.18rem;
+}
+
+/* web header 结束 */
+
+/* web content 开始 */
+.web_content {
+    background-color: #ffffff;
+    box-sizing: border-box;
+    padding: 0.3rem 0rem;
+}
+
+.web_content h2 {
+    text-align: center;
+    font-size: 0.32rem;
+    font-family: PingFang SC;
+    font-weight: bold;
+    color: rgba(21, 78, 175, 1);
+}
+
+.p1_box {
+    margin-top: 0.20rem;
+}
+
+.p1_box p {
+    text-align: center;
+    font-size: 0.24rem;
+    font-family: PingFang SC;
+    font-weight: bold;
+    color: rgba(21, 78, 175, 1);
+}
+
+.web_content .line {
+    width: 4.80rem;
+    height: 0.04rem;
+    background: rgba(21, 78, 175, 1);
+    border-radius: 0.02rem;
+    margin: 0.2rem auto 0.2rem;
+}
+
+.p2_box p {
+    text-align: center;
+    font-size: 0.24rem;
+    font-family: PingFang SC;
+    font-weight: bold;
+    color: rgba(102, 102, 102, 1);
+}
+
+.web_content_phone {
+    margin: 0.28rem auto 0rem;
+    width: 2.96rem;
+    height: 0.72rem;
+    border: 0.02rem solid rgba(21, 78, 175, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.web_content_phone img {
+    height: 0.48rem;
+    width: 0.48rem;
+    margin-right: 0.2rem;
+}
+
+.web_content_phone span {
+    font-size: 0.24rem;
+    font-family: PingFang SC;
+    font-weight: bold;
+    color: rgba(51, 51, 51, 1);
+}
+
+/* web content 结束 */
+
+/* web footer 开始 */
+.web_footer {
+    background: rgba(21, 78, 175, 1);
+    box-sizing: border-box;
+    padding: 0 0.30rem;
+}
+
+.web_footer_top {
+    box-sizing: border-box;
+    padding: 0.28rem 0rem 0.28rem 1.04rem;
+    border-bottom: 0.01rem solid #ffffff;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.web_footer_codeBox {
+    width: 1.60rem;
+    height: 1.60rem;
+    background: rgba(255, 255, 255, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.web_footer_codeBox img {
+    width: 1.50rem;
+    height: 1.50rem;
+}
+
+.web_footer_top .line {
+    margin: 0 0.2rem;
+    width: 0.01rem;
+    height: 1.60rem;
+    background: rgba(255, 255, 255, 1);
+    opacity: 0.5;
+}
+
+.web_footer_top_right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.web_footer_top_right p {
+    font-size: 0.24rem;
+    font-family: PingFang SC;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 1)
+}
+
+.web_footer_top_right_address {
+    margin-top: 0.28rem;
+}
+
+.web_footer_bottom {
+    height: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.web_footer_bottom p {
+    text-align: center;
+    font-size: 0.20rem;
+    font-family: PingFang SC;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 1);
+}
+
+/* web footer 结束 */
+
+@media screen and (min-width:1200px) {
+
+    .web_header,
+    .web_banner,
+    .web_content,
+    .web_footer {
+        display: none;
     }
 }
 
+@media screen and (max-width:768px) {
 
-/* footer 开始 */
-@media screen and (min-width:1200px) {
+    .header,
+    .banner,
+    .content,
     .footer {
-        background: rgba(21, 78, 175, 1);
-    }
-
-    .footer .center {
-        margin: auto;
-        width: 1200px;
-        height: 195px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        color: rgba(255, 255, 255, 1);
-    }
-
-    .footer-left {
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-    }
-
-    .erweima {
-        width: 100px;
-        height: 100px;
-        background: rgba(34, 34, 34, 1);
-        border: 5px solid rgba(255, 255, 255, 1);
-    }
-
-    .erweima img {
-        height: 100%;
-        width: 100%;
-    }
-
-    .footer-left .line {
-        width: 1px;
-        height: 110px;
-        background: rgba(255, 255, 255, 1);
-        opacity: 0.5;
-        margin-left: 20px;
-        margin-right: 20px;
-    }
-
-    .weixin {
-        margin-top: 16px;
-        margin-bottom: 16px;
-    }
-
-    .footer-right {
-        font-size: 18px;
-        font-family: PingFang SC;
-        font-weight: bold;
-        color: rgba(255, 255, 255, 1);
-    }
-
-    .footer-right p {
-        margin-top: 20px;
-        text-align: center;
+        display: none;
     }
 }
-
-@media screen and (max-width:750px) {
-    
-}
-/* footer 结束 */
