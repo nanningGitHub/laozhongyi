@@ -3,6 +3,10 @@
     padding: 0px;
 }
 
+a {
+    text-decoration: none;
+}
+
 /* pc header 开始 */
 .header {
     background: rgba(255, 255, 255, 1);
